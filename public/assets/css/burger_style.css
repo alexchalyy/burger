@@ -5,7 +5,7 @@ body    {
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    background: orange;
   }
   
   .label {
@@ -20,4 +20,8 @@ li {
   
   .form-group {
     margin-bottom: 5px;
+  }
+
+  #b    {
+      width: 10%;
   }

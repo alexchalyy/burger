@@ -1,6 +1,6 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-    $(".change-burger").on("click", function(event) {
+    $(".change-devour").on("click", function(event) {
       var id = $(this).data("id");
       var newBurger = $(this).data("newburger");
   
@@ -14,7 +14,7 @@ $(function() {
         data: newBurgerState
       }).then(
         function() {
-          console.log("changed sleep to", newBurger);
+          console.log("changed devoured to", newBurger);
           // Reload the page to get the updated list
           location.reload();
         }
@@ -33,7 +33,7 @@ $(function() {
       // Send the POST request.
       $.ajax("/api/burgers", {
         type: "POST",
-        data: newCat
+        data: newBurger
       }).then(
         function() {
           console.log("created new burger");
